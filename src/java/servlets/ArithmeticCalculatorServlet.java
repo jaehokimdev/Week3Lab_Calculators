@@ -27,6 +27,10 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
         
         String first = request.getParameter("first");
         String second = request.getParameter("second");
+        
+        request.setAttribute("first", first);
+        request.setAttribute("second", second);
+
 
     }
 
